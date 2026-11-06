@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الفحام نت</title>
+    <title>الفحام للمعلوميات</title>
     <meta name="theme-color" content="#123456">
-    <link rel="icon" type="image/jpeg" href="./Alfaham-Net.jpg">
-    <link rel="apple-touch-icon" href="./Alfaham-Net.jpg">
+    <link rel="icon" type="image/png" href="./Alfaham-Info.png">
+    <link rel="apple-touch-icon" href="./Alfaham-Info.png">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="manifest" href="manifest.webmanifest">
@@ -185,7 +185,7 @@
 <body>
     <div class="header">
                 <a class="header-logo-link" href="./" aria-label="الرئيسية">
-            <img class="header-logo" src="https://raw.githubusercontent.com/h-80/img/refs/heads/main/Alfaham%20net%20(2).png" alt="شعار الموقع">
+            <img class="header-logo" src="https://raw.githubusercontent.com/afm80/img/refs/heads/main/alfaham%20info1.png" alt="شعار الموقع">
         </a>
         <form class="search-area" id="search-area">
             <input id="search-input" type="search" placeholder="ابحث في المواضيع" aria-label="البحث">
@@ -347,9 +347,9 @@
             try {
                 const parsedUrl = new URL(value, window.location.href);
                 const isGithubPagesUrl = parsedUrl.hostname.toLowerCase().endsWith('.github.io');
-                const isProjectPath = /^\/net(?:\/|$)/i.test(parsedUrl.pathname);
+                const isProjectPath = /^\/info(?:\/|$)/i.test(parsedUrl.pathname);
                 if (isGithubPagesUrl && (isProjectPath || parsedUrl.searchParams.has('category'))) {
-                    const relativePath = (isProjectPath ? parsedUrl.pathname.replace(/^\/net\/?/i, '') : '').replace(/index\.html\/?$/i, '');
+                    const relativePath = (isProjectPath ? parsedUrl.pathname.replace(/^\/info\/?/i, '') : '').replace(/index\.html\/?$/i, '');
                     const resolvedUrl = new URL(relativePath, getSiteUrl());
                     resolvedUrl.search = parsedUrl.search;
                     resolvedUrl.hash = parsedUrl.hash;
@@ -708,10 +708,10 @@
                     subcategoryCards.innerHTML = childCategories.map((category) => {
                         const targetHref = resolveCategoryUrl(category.url, getSiteUrl(`?category=${encodeURIComponent(category.id)}`));
                         const savedImageUrl = String(category.imageUrl || '').trim();
-                        const imageUrl = /^https?:\/\//i.test(savedImageUrl) ? savedImageUrl : './Alfaham-Net.jpg';
+                        const imageUrl = /^https?:\/\//i.test(savedImageUrl) ? savedImageUrl : './Alfaham-Info.png';
                         return `
                             <a class="subcategory-card" href="${escapeHtml(targetHref)}">
-                                <img class="subcategory-card-image" src="${escapeHtml(imageUrl)}" alt="" onerror="this.onerror=null;this.src='./Alfaham-Net.jpg';">
+                                <img class="subcategory-card-image" src="${escapeHtml(imageUrl)}" alt="" onerror="this.onerror=null;this.src='./Alfaham-Info.png';">
                                 <span class="subcategory-card-name">${escapeHtml(category.name)}</span>
                             </a>`;
                     }).join('');

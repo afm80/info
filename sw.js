@@ -1,6 +1,6 @@
 const CACHE_PREFIX = 'iraq-net-shell-';
-const CACHE_NAME = `${CACHE_PREFIX}v30`;
-const APP_SHELL = ['./', './index.html', './article.html', './404.html', './admin.html', './manifest.webmanifest', './Alfaham-Net.jpg'];
+const CACHE_NAME = `${CACHE_PREFIX}v31`;
+const APP_SHELL = ['./', './index.html', './article.html', './404.html', './admin.html', './manifest.webmanifest', './Alfaham-Info.png'];
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
@@ -26,7 +26,7 @@ self.addEventListener('fetch', (event) => {
 
     const isNavigationRequest = event.request.mode === 'navigate';
     const isStaticAsset = /\.(js|css|png|jpg|jpeg|gif|svg|webp|ico|json|webmanifest)$/i.test(requestUrl.pathname);
-    const isArticleRoute = isNavigationRequest && /^\/net\/article\/?$/i.test(requestUrl.pathname);
+    const isArticleRoute = isNavigationRequest && /^\/info\/article\/?$/i.test(requestUrl.pathname);
 
     if (isArticleRoute) {
         const articleUrl = new URL('./article.html', self.location.href);

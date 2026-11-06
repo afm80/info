@@ -8,23 +8,23 @@
 <body>
     <p style="text-align: center; font-family: sans-serif;">جاري تحميل الموضوع...</p>
     <script>
-        const isArticleRoute = /^\/net\/article\/?$/i.test(window.location.pathname);
+        const isArticleRoute = /^\/info\/article\/?$/i.test(window.location.pathname);
         if (isArticleRoute) {
-            fetch('/net/article.html')
+            fetch('/info/article.html')
                 .then((response) => {
                     if (!response.ok) throw new Error('تعذر تحميل صفحة المقال');
                     return response.text();
                 })
                 .then((html) => {
                     document.open();
-                    document.write(html.replace('<head>', '<head><base href="/net/">'));
+                    document.write(html.replace('<head>', '<head><base href="/info/">'));
                     document.close();
                 })
                 .catch(() => {
                     document.body.innerHTML = '<p style="text-align: center; font-family: sans-serif;">تعذر تحميل الموضوع.</p>';
                 });
         } else {
-            window.location.replace('/net');
+            window.location.replace('/info');
         }
     </script>
 </body>

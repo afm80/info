@@ -1,7 +1,7 @@
 {
-  "name": "الفحام نت",
-  "short_name": "الفحام نت",
-  "description": "الفحام نت للأخبار والرياضة والتكنولوجيا والمنوعات",
+  "name": "الفحام للمعلوميات",
+  "short_name": "الفحام للمعلوميات",
+  "description": "الفحام للمعلوميات للأخبار والرياضة والتكنولوجيا والمنوعات",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "./",
@@ -11,9 +11,9 @@
   "theme_color": "#123456",
   "icons": [
     {
-      "src": "./Alfaham-Net.jpg",
-      "sizes": "768x768",
-      "type": "image/jpeg",
+      "src": "./Alfaham-Info.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
       "purpose": "any"
     }
   ],

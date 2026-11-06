@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>جاري تحميل الموضوع...</title>
-    <meta id="meta-description" name="description" content="الفحام نت">
-    <meta id="meta-og-title" property="og:title" content="الفحام نت">
-    <meta id="meta-og-description" property="og:description" content="الفحام نت">
+    <meta id="meta-description" name="description" content="الفحام للمعلوميات">
+    <meta id="meta-og-title" property="og:title" content="الفحام للمعلوميات">
+    <meta id="meta-og-description" property="og:description" content="الفحام للمعلوميات">
     <meta id="meta-og-image" property="og:image" content="https://raw.githubusercontent.com/h-80/img/refs/heads/main/Alfaham%20net%20(1).png">
     <meta id="meta-og-secure-image" property="og:image:secure_url" content="https://raw.githubusercontent.com/h-80/img/refs/heads/main/Alfaham%20net%20(1).png">
     <meta property="og:image:type" content="image/png">
@@ -14,8 +14,8 @@
     <meta id="meta-twitter-image" name="twitter:image" content="https://raw.githubusercontent.com/h-80/img/refs/heads/main/Alfaham%20net%20(1).png">
     <meta property="og:type" content="article">
     <meta name="theme-color" content="#123456">
-    <link rel="icon" type="image/jpeg" href="./Alfaham-Net.jpg">
-    <link rel="apple-touch-icon" href="./Alfaham-Net.jpg">
+    <link rel="icon" type="image/png" href="./Alfaham-Info.png">
+    <link rel="apple-touch-icon" href="./Alfaham-Info.png">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="manifest" href="manifest.webmanifest">
@@ -186,7 +186,7 @@
 <body>
     <div class="header">
                 <a class="header-logo-link" href="./" aria-label="الرئيسية">
-            <img class="header-logo" src="https://raw.githubusercontent.com/h-80/img/refs/heads/main/Alfaham%20net%20(2).png" alt="شعار الموقع">
+            <img class="header-logo" src="https://raw.githubusercontent.com/afm80/img/refs/heads/main/alfaham%20info1.png" alt="شعار الموقع">
         </a>
         <form class="search-area" id="search-area">
             <input id="search-input" type="search" placeholder="ابحث في المواضيع" aria-label="البحث">
@@ -291,9 +291,9 @@
             try {
                 const parsedUrl = new URL(value, window.location.href);
                 const isGithubPagesUrl = parsedUrl.hostname.toLowerCase().endsWith('.github.io');
-                const isProjectPath = /^\/net(?:\/|$)/i.test(parsedUrl.pathname);
+                const isProjectPath = /^\/info(?:\/|$)/i.test(parsedUrl.pathname);
                 if (isGithubPagesUrl && (isProjectPath || parsedUrl.searchParams.has('category'))) {
-                    const relativePath = (isProjectPath ? parsedUrl.pathname.replace(/^\/net\/?/i, '') : '').replace(/index\.html\/?$/i, '');
+                    const relativePath = (isProjectPath ? parsedUrl.pathname.replace(/^\/info\/?/i, '') : '').replace(/index\.html\/?$/i, '');
                     const resolvedUrl = new URL(relativePath, getSiteUrl());
                     resolvedUrl.search = parsedUrl.search;
                     resolvedUrl.hash = parsedUrl.hash;
