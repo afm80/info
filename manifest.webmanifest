@@ -11,7 +11,7 @@
   "theme_color": "#123456",
   "icons": [
     {
-      "src": "./Alfaham-Info.png",
+      "src": "./Alfaham-Info.png?v=31",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any"

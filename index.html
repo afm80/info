@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الفحام للمعلوميات</title>
     <meta name="theme-color" content="#123456">
-    <link rel="icon" type="image/png" href="./Alfaham-Info.png">
-    <link rel="apple-touch-icon" href="./Alfaham-Info.png">
+    <link rel="icon" type="image/png" href="./Alfaham-Info.png?v=31">
+    <link rel="apple-touch-icon" href="./Alfaham-Info.png?v=31">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest?v=31">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <script>if (localStorage.getItem('site-theme') === 'dark') document.documentElement.classList.add('dark-mode');</script>
     <script>
@@ -801,7 +801,7 @@
         loadCategories().then(loadArticles);
         if ('ResizeObserver' in window) new ResizeObserver(syncStickyBarHeight).observe(document.getElementById('categories-bar'));
         window.addEventListener('resize', syncStickyBarHeight);
-        if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js?v=30').catch(() => {});
+        if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js?v=31').catch(() => {});
         setupInstallPrompt();
         setupThemeToggle();
     </script>
