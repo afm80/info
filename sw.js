@@ -1,6 +1,6 @@
 const CACHE_PREFIX = 'iraq-net-shell-';
 const CACHE_NAME = `${CACHE_PREFIX}v31`;
-const APP_SHELL = ['./', './index.html', './article.html', './404.html', './admin.html', './manifest.webmanifest', './Alfaham-Info.png'];
+const APP_SHELL = ['./', './index.html', './article.html', './404.html', './manifest.webmanifest', './Alfaham-Info.png'];
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
